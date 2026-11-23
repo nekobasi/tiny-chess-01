@@ -15,7 +15,11 @@ game through the env at `MAKEFUN_ENV_URL`.
 - transposition table, futility pruning, MVV-LVA, killer and history ordering
 - material plus piece-square terms built from formulas, with an endgame king table
 
-MIT licensed (see LICENSE).
+Search budget: 45,000 nodes per move by default (`NODES` env var overrides it).
+On the kit's practice gauntlets it scored 23/30 over five sets (local Elo
+estimates 1364-1654), against 1279 for the previous version.
 
-Run: `MAKEFUN_ENV_URL=<env url> python3.13 main.py`. `main.py` is packed from a readable
-source with `makefun compress`.
+Run: `MAKEFUN_ENV_URL=<env url> python3.13 main.py`. `main.py` is packed from a
+readable source with `makefun compress`.
+
+MIT licensed (see LICENSE).
